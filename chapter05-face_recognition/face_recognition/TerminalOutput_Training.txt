@@ -1,0 +1,27 @@
+before argument parser:
+svmem(total=13653602304, available=12659712000, percent=7.3, used=710115328, free=10470875136, active=1188036608, inactive=1645305856, buffers=76972032, cached=2395639808, shared=1032192, slab=196972544)
+resource.struct_rusage(ru_utime=0.474224, ru_stime=0.30289099999999997, ru_maxrss=81452, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15996, ru_majflt=167, ru_nswap=0, ru_inblock=45816, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1201, ru_nivcsw=231)
+ 
+after argument parser:
+svmem(total=13653602304, available=12659896320, percent=7.3, used=709754880, free=10470600704, active=1188171776, inactive=1645625344, buffers=77152256, cached=2396094464, shared=1032192, slab=196988928)
+resource.struct_rusage(ru_utime=0.476, ru_stime=0.303094, ru_maxrss=81452, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16033, ru_majflt=167, ru_nswap=0, ru_inblock=46168, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1213, ru_nivcsw=231)
+ 
+after loading face encodings:
+svmem(total=13653602304, available=12656062464, percent=7.3, used=716353536, free=10463891456, active=1195532288, inactive=1645760512, buffers=77152256, cached=2396205056, shared=1032192, slab=196988928)
+resource.struct_rusage(ru_utime=0.480716, ru_stime=0.30794299999999997, ru_maxrss=81452, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=17813, ru_majflt=169, ru_nswap=0, ru_inblock=51616, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1231, ru_nivcsw=269)
+ 
+after encode the label:
+svmem(total=13653602304, available=12656041984, percent=7.3, used=716541952, free=10462859264, active=1195270144, inactive=1646772224, buffers=77152256, cached=2397048832, shared=1032192, slab=196988928)
+resource.struct_rusage(ru_utime=0.48196799999999995, ru_stime=0.30794299999999997, ru_maxrss=81452, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=17838, ru_majflt=172, ru_nswap=0, ru_inblock=52016, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1234, ru_nivcsw=304)
+ 
+after training model:
+svmem(total=13653602304, available=12655931392, percent=7.3, used=720064512, free=10458828800, active=1195036672, inactive=1650524160, buffers=77152256, cached=2397556736, shared=1032192, slab=197091328)
+resource.struct_rusage(ru_utime=1.517144, ru_stime=0.30794299999999997, ru_maxrss=83952, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18528, ru_majflt=174, ru_nswap=0, ru_inblock=52288, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1236, ru_nivcsw=350)
+ 
+after writing actual face recognition model to disk:
+svmem(total=13653602304, available=12656943104, percent=7.3, used=719155200, free=10457845760, active=1195003904, inactive=1652506624, buffers=77180928, cached=2399420416, shared=1032192, slab=197074944)
+resource.struct_rusage(ru_utime=1.519097, ru_stime=0.30794299999999997, ru_maxrss=84468, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18545, ru_majflt=174, ru_nswap=0, ru_inblock=52288, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1251, ru_nivcsw=359)
+ 
+after writing label encoder to disk:
+svmem(total=13653602304, available=12656181248, percent=7.3, used=719925248, free=10456272896, active=1195003904, inactive=1653317632, buffers=77185024, cached=2400219136, shared=1032192, slab=197074944)
+resource.struct_rusage(ru_utime=1.5197349999999998, ru_stime=0.30794299999999997, ru_maxrss=84468, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18546, ru_majflt=174, ru_nswap=0, ru_inblock=52288, ru_oublock=0, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1260, ru_nivcsw=359)

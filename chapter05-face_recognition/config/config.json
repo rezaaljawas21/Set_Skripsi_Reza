@@ -1,0 +1,59 @@
+{
+	// path to OpenCV's face detector cascade file
+	"cascade_path": "cascade/haarcascade_frontalface_default.xml",
+
+	// path to extracted face encodings file
+	"encodings_path": "output/encodings.pickle",
+
+	// path to face recognizer model
+	"recognizer_path": "output/recognizer.pickle",
+
+	// path to label encoder file
+	"le_path": "output/le.pickle",
+
+	// boolean variable used to indicate if frames should be displayed
+	// to our screen
+	"display": true,
+
+	// variable used to store the area threshold percentage
+	"threshold": 0.12,
+
+	// number of consecutive frames to look for a face once the door
+	// is open
+	"look_for_a_face": 60,
+
+	// number of consecutive frames to recognize a particular person
+	// to reach a conclusion
+	"consec_frames": 1,
+
+	// number of frames to skip once a person is recognized
+	"n_skip_frames": 900,
+
+	// see available languages in your terminal with `gtts-cli --all`
+	// shows accents/dialects after the hyphen.
+	// ex: en-gb would be the English language with British accent
+	"lang": "en",
+	"accent": "us",
+
+	// path to messages directory
+	"msgs_path": "messages",
+
+	// two variables, one to store the message used for homeowner(s),
+	// and a second to store the message used for intruders
+	"welcome_sound": "Welcome home ",
+	"intruder_sound": "I don't recognize you, I am alerting the homeowners that you are in their house.",
+
+	// variables to store your aws account credentials
+	"aws_access_key_id": "YOUR_AWS_ACCESS_KEY_ID",
+	"aws_secret_access_key": "YOUR_AWS_SECRET_ACCESS_KEY",
+	"s3_bucket": "YOUR_S3_BUCKET_NAME",
+
+	// variables to store your twilio account credentials
+	"twilio_sid": "YOUR_TWILIO_SID",
+	"twilio_auth": "YOUR_TWILIO_AUTH_ID",
+	"twilio_to": "YOUR_PHONE_NUMBER",
+	"twilio_from": "YOUR_TWILIO_PHONE_NUMBER",
+
+	// message sent to the owners when a intruder is detected
+	"message_body": "There is an intruder in your house."
+}
