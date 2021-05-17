@@ -220,7 +220,7 @@ with open("TerminalHasilUjiCoba.txt","w") as f:
             sys.stdout = original_stdout
             # print the recognized person
             print("[INFO] recognized {}...".format(curPerson))
-            cv2.imshow('frame',gray)
+            #cv2.imshow('frame',gray)
             sys.stdout = f
             #--------------------------#
             # this line indicated that the person has been recognize
